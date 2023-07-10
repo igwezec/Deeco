@@ -17,18 +17,88 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+/* =============navbar============ */
+ul .menu-list{
+  display: none;
+}
+
+header nav .hamburger-icon{
+  display: block;
+  margin-right: 10px;
+}
+.top-nav .top-nav-btn .nav-search-icon{
+  width: 30px;
+  height: 30px;
+  /* border: 3px solid red; */
+  margin-top: 5px;
+}
+.top-nav .top-nav-cart .cart-icon{
+  margin-top: 5px;
+}
+.top-nav .top-nav-btn button{
+  padding: 0.6rem 1.5rem;
+  margin-right: 0.8rem;
+}
+.top-nav-cart .create-store{
+  display: none;
+}
+
+/* =============================Start of Mobile Menu Card=================================== */
+
+.mobile_menu-wrapper {
+  display: none!important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  background-color: antiquewhite;
+  /* position: fixed; */
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* transform: translateX(-100%);
+  transition: all 0.5s ease; */
+  /* opacity: 0; */
+
+}
+.mobile_menu-card ul{
+  list-style: none;
+}
+.mobile_menu-card ul li{
+  padding: 1rem 0;
+}
+.mobile_menu-card ul li a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+}
+.mobile_menu-card .mobile-socio{
+  margin: 8px;
+  border-top: 1px solid #858383;
+  border-bottom: 1px solid #858383;
+  /* border: 1px solid red; */
+  padding: 2rem;
+  width: 100%;
+}
+
+/* =============================End of Mobile Menu Card=================================== */
+
+
   /* ==========product section======== */
   .product-section .product-container .product-title{
     padding: 0.4rem;
 }
 .product-section .product-container{
     max-width: 90%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .product_section-wrapper  .product-contents .product-card{
     width: 100%;
     padding: 1.5rem 1rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .product_section-wrapper .proceed-to-cart-button{
@@ -88,17 +158,47 @@ body{
 
 
   /* ==================== Footer  ==================== */
-  .footer_wrapper{
+  footer{
+    padding: 1rem;
+  }
+  footer .footer_wrapper{
     display: flex;
     flex-wrap: wrap;
   }
-  .footer_wrapper .footer_column{
-    width: 100% !important;
-    padding: 0 0.5rem;
-    /* border: 2px solid blue; */
+  footer .footer_wrapper .footer_column{
+    width: 100%;
+    /* padding: 0 0.5rem; */
   }
-  .footer_wrapper .footer_column_b{
-    width: 45% !important;
-    /* border: 2px solid blue; */
+  footer .footer_wrapper .footer_column_b{
+    width: 45%;
   }
+  footer .footer_wrapper .social-mobile{
+    display: block!important;
+  }
+  .footer_wrapper .social-mobile .footer_social_icon-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  .footer_wrapper .social-mobile .footer_social_icon-mobile i{
+    font-size: 1rem;
+    border: 1px solid rgb(112, 191, 86);
+    padding: 8px;
+    color: rgb(112, 191, 86);
+    border-radius: 50%;
+    margin: 5px;
+  }
+  .footer_column .footer_social_icon{
+    display: none;
+  }
+  .footer_wrapper .footer_column .footer_newsletter-input input{
+    width: 50%;
+  }
+  .footer_column .footer_newsletter-input input{
+  padding: 0;
+
+}
+.footer_column .footer_newsletter-input button{
+  padding: 10px;}
 }

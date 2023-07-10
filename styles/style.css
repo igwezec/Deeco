@@ -19,7 +19,9 @@ header{
   margin: 0 auto;
   /*border: 2px solid red; */
 }
-
+.mobile_menu-wrapper{
+  display: none;
+}
 /*================================Header section=======================*/
 .top-nav-container{
   background-color: rgb(43, 135, 215);
@@ -28,6 +30,7 @@ header{
 .top-nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(43, 135, 215);
   padding: 10px 0;
 }
@@ -35,6 +38,7 @@ header{
   display: flex;
 }
 .top-nav-btn button{
+  cursor: pointer;
   background-color: rgb(214, 30, 211);
   border: none;
   padding: 0.8rem 2rem;
@@ -83,6 +87,9 @@ nav ul{
   padding-left: 4rem;
   align-items: center;
 }
+.menu-list{
+  display: flex;
+}
 nav ul li{
   list-style: none;
   padding: 10px;
@@ -94,6 +101,10 @@ nav ul li a{
 nav .left-nav{
   display: flex;
   align-items: center;
+}
+
+nav .hamburger-icon{
+  display: none;
 }
 
 /* =====================Hero Section ========================= */
@@ -156,9 +167,10 @@ nav .left-nav{
   box-shadow: 0 0 15px 2px rgb(0 0 0 / 5%);
   padding: 1.6rem 2rem;
   margin-bottom: 2rem;
-  border: 2px solid red;
-  display: flex;
-  justify-content: center;
+  /* border: 2px solid red; */
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .product-title .product_title-content{
@@ -346,21 +358,68 @@ nav .left-nav{
 }
 
 /* =============================checkout page================================ */
+@media screen and (max-width: 768px) {
+  .checkout-wrapper{
+    max-width: 90% !important;
+    margin: 0 auto;
+    height: 100% !important;
+    border: 2px solid red;
+    margin-bottom: 2rem !important;
+  }
+
+  .checkout_page-container{
+    flex-direction: column;
+  }
+
+  .checkout_page-container .checkout-form{
+    width: 100% !important;
+    height: 100%;
+    border: 2px solid green;
+  }
+
+  .checkout_page-container .products-details{
+    width: 100% !important;
+    /* height: 80vh; */
+    /* overflow-y: auto; */
+    border: 5px solid purple;
+  }
+
+  .checkout-form .checkout-pay-btn{
+    padding: 0.8rem 1rem !important;
+    margin-top: 2rem !important;
+  }
+  .checkout-form form{
+    /* border: 2px solid red; */
+    padding:0.8rem 2rem;
+   flex-direction: column;
+    /* width: 100%;
+    height: 100%; */
+  }
+  
+  .checkout-form .form-group{
+    width: 100% !important;
+    /* margin-bottom: 1rem; */
+    /* border: 2px solid red; */
+  }
+  
+}
+
+
 .checkout-wrapper{
   max-width: 80%;
   margin: 0 auto;
   height: 100vh;
 }
 .checkout-top{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 
 .checkout_page-container{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -368,15 +427,97 @@ nav .left-nav{
 }
 .checkout_page-container .products-details{
   width: 45%;
-  border: 2px solid blackj;
   height: 80vh;
+  overflow-y: auto;
+  /* border: 5px solid purple; */
 }
+
+.products-details .products_details-card{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 1rem;
+  /* border: 2px solid red; */
+}
+
+.products-details .products_details-img{
+  width: 30%;
+  height: 23vh;
+  padding: 1rem;
+  /* border: 2px solid blue; */
+}
+
+.products-details .products_details-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.products-details .products_details-content{
+  width: 70%; 
+  padding: 0 1rem;
+  /* border: 2px solid black; */
+}
+.products_details-content .products_details-title{
+  display: flex; 
+  justify-content: space-between; 
+  /* border: 2px solid green; */
+}
+
+.products_details-content .products_details-title h3{
+  width: 50%;
+}
+
 .checkout_page-container .checkout-form{
   width: 55%;
   height: 80vh;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
+.checkout-form h2{
+  padding: 1rem 3rem;
+}
+.checkout-form form{
+  /* border: 2px solid red; */
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 75%;
+}
+
+.checkout-form .form-group{
+  width: 50%;
+  margin-bottom: 1rem;
+  /* border: 2px solid red; */
+}
+
+.checkout-form .form-group label{
+  font-weight: bold;
+}
+
+.checkout-form .form-group input{
+  border: none;
+  border-bottom: 2px solid rgb(175, 170, 170);
+  width: 90%;
+  padding: 1rem 0;
+  outline: none;
+}
+
+.checkout-form .checkout-pay-btn{
+  margin-top: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: rgb(112, 191, 86);
+  border-radius: 5px;
+  width: 60%;
+  display: block;
+  text-align: center;
+  padding: 1rem 3rem;
+  /* margin-top: 1rem; */
+}
 
 /* ===============================footer section========================= */
 footer{
@@ -392,6 +533,7 @@ footer{
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
+  margin: 10px 0;
 }
 
 .footer_wrapper{
@@ -403,12 +545,14 @@ footer{
 } */
 .footer_wrapper .footer_column{
   width: 30%;
-  padding: 0 0.5rem;
-  /* border: 2px solid blue; */
 }
 .footer_wrapper .footer_column_b{
   width: 12%;
-  /* border: 2px solid blue; */
+  margin-bottom: 10px;
+}
+
+footer .footer_wrapper .social-mobile{
+  display: none;
 }
 
 .footer_column_b ul{
@@ -436,7 +580,6 @@ footer{
 
 .footer_social_icon{
   width: 60%;
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
 }
@@ -446,4 +589,29 @@ footer{
   padding: 8px;
   color: rgb(112, 191, 86);
   border-radius: 50%;
+}
+
+.footer_column .footer_newsletter-input{
+  width: 100%;
+  margin-top: 10px;
+  /* padding: 30px; */
+  /* border: 2px solid red; */
+}
+
+.footer_column .footer_newsletter-input input{
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(218, 215, 215);
+  width: 70%;
+}
+
+.footer_column .footer_newsletter-input button{
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  background-color: rgb(112, 191, 86);
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
 }
