@@ -3,56 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/mobilequeries.css" />
     <title>Admin - Deeco</title>
 </head>
 <body>
-    <header>
-        <div class="top-nav-container">
-          <div class="row top-nav">
-            <div class="top-nav-btn">
-              <button type="submit">Connect wallet</button>
-              <svg width="40px" height="40px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 11.1455C5.49956 8.21437 7.56975 5.69108 10.4445 5.11883C13.3193 4.54659 16.198 6.08477 17.32 8.79267C18.4421 11.5006 17.495 14.624 15.058 16.2528C12.621 17.8815 9.37287 17.562 7.3 15.4895C6.14763 14.3376 5.50014 12.775 5.5 11.1455Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15.989 15.4905L19.5 19.0015" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            </div>
-            <div class="top-nav-cart">
-              <a href="/">create a store</a>
-  
-              <span class="cart-icon">
-                <a href="/cart/">
-                  <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C1.44772 2 1 2.44772 1 3C1 3.55228 1.44772 4 2 4H2.47241C2.92336 4 3.31852 4.30182 3.43717 4.73688L3.85342 6.26312L6 14.1339V16C6 16.6935 6.23533 17.3321 6.63048 17.8402C6.23824 18.2816 6 18.863 6 19.5C6 20.8807 7.11929 22 8.5 22C9.88071 22 11 20.8807 11 19.5C11 19.3288 10.9828 19.1616 10.95 19H14.05C14.0172 19.1616 14 19.3288 14 19.5C14 20.8807 15.1193 22 16.5 22C17.8807 22 19 20.8807 19 19.5C19 19.1715 18.9366 18.8578 18.8215 18.5704C18.934 18.4086 19 18.212 19 18C19 17.4477 18.5523 17 18 17H16.5H9C8.44772 17 8 16.5523 8 16V15H18.236C19.1381 15 19.9285 14.3962 20.1657 13.5258L21.8007 7.52583C22.1473 6.25364 21.1896 5 19.871 5H5.58198L5.3667 4.21065C5.01074 2.90547 3.82526 2 2.47241 2H2ZM16.5 19C16.2239 19 16 19.2239 16 19.5C16 19.7761 16.2239 20 16.5 20C16.7761 20 17 19.7761 17 19.5C17 19.2239 16.7761 19 16.5 19ZM18.236 13H7.7638L6.12743 7H19.871L18.236 13ZM8.5 19C8.22386 19 8 19.2239 8 19.5C8 19.7761 8.22386 20 8.5 20C8.77614 20 9 19.7761 9 19.5C9 19.2239 8.77614 19 8.5 19Z" fill="#ffffff"></path> </g></svg>
-                </a>
-                <p>0</p>
-              </span>
-            </div>
-          </div>
-          
-  
+  <header>
+    <div class="top-nav-container">
+      <div class="row top-nav">
+        <div class="top-nav-btn">
+          <button type="submit">Connect wallet</button>
+          <svg class="nav-search-icon" width="40px" height="40px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 11.1455C5.49956 8.21437 7.56975 5.69108 10.4445 5.11883C13.3193 4.54659 16.198 6.08477 17.32 8.79267C18.4421 11.5006 17.495 14.624 15.058 16.2528C12.621 17.8815 9.37287 17.562 7.3 15.4895C6.14763 14.3376 5.50014 12.775 5.5 11.1455Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15.989 15.4905L19.5 19.0015" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
         </div>
-  
-        <nav class="row">
-          <div class="left-nav">
-            <h3 class="deeco_logo"><em>Deeco.</em></h3>
-  
-            <ul>
-              <a href="/index.html">
-                <svg width="25px" height="25px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M109.632 673.664h519.68c25.152 0 45.568-22.016 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m0-228.096h519.68c25.152 0 45.568-21.952 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m3.264-219.904h795.776c26.88 0 50.56-20.352 51.328-47.168A48.896 48.896 0 0 0 911.104 128H115.328c-26.88 0-50.56 20.416-51.328 47.168a48.896 48.896 0 0 0 48.896 50.56z m619.776 447.232V348.672L960 510.784l-227.328 162.112c0 0.768 0 0.768 0 0z m178.432 122.944H115.328c-26.88 0-50.56 20.48-51.328 47.232a48.896 48.896 0 0 0 48.896 50.496h795.776c26.88 0 50.56-20.416 51.328-47.232a48.896 48.896 0 0 0-48.896-50.496z" fill="#000000"></path></g></svg>
-              </a>
-              <li><a href="/">Home</a></li>
-              <li><a href="/all-products/">All products</a></li>
-              <li><a href="/coins-watchlist/">Today's deals</a></li>
-              <li><a href="/trending-coins-watchlist/">Electronics</a></li>
-              <li><a href="/blog/">Accessories</a></li>
-              <li><a href="/policy/">Deeco fashion</a></li>
-              <li><a href="/about/">Home and kitchen</a></li>
-            </ul>
+        <div class="top-nav-cart">
+          <a href="/admin/" class="create-store">create a store</a>
+
+          <span class="cart-icon">
+            <a href="/cart/">
+              <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C1.44772 2 1 2.44772 1 3C1 3.55228 1.44772 4 2 4H2.47241C2.92336 4 3.31852 4.30182 3.43717 4.73688L3.85342 6.26312L6 14.1339V16C6 16.6935 6.23533 17.3321 6.63048 17.8402C6.23824 18.2816 6 18.863 6 19.5C6 20.8807 7.11929 22 8.5 22C9.88071 22 11 20.8807 11 19.5C11 19.3288 10.9828 19.1616 10.95 19H14.05C14.0172 19.1616 14 19.3288 14 19.5C14 20.8807 15.1193 22 16.5 22C17.8807 22 19 20.8807 19 19.5C19 19.1715 18.9366 18.8578 18.8215 18.5704C18.934 18.4086 19 18.212 19 18C19 17.4477 18.5523 17 18 17H16.5H9C8.44772 17 8 16.5523 8 16V15H18.236C19.1381 15 19.9285 14.3962 20.1657 13.5258L21.8007 7.52583C22.1473 6.25364 21.1896 5 19.871 5H5.58198L5.3667 4.21065C5.01074 2.90547 3.82526 2 2.47241 2H2ZM16.5 19C16.2239 19 16 19.2239 16 19.5C16 19.7761 16.2239 20 16.5 20C16.7761 20 17 19.7761 17 19.5C17 19.2239 16.7761 19 16.5 19ZM18.236 13H7.7638L6.12743 7H19.871L18.236 13ZM8.5 19C8.22386 19 8 19.2239 8 19.5C8 19.7761 8.22386 20 8.5 20C8.77614 20 9 19.7761 9 19.5C9 19.2239 8.77614 19 8.5 19Z" fill="#ffffff"></path> </g></svg>
+            </a>
+            <p>0</p>
+          </span>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <nav class="row">
+      <div class="left-nav">
+        <h3 class="deeco_logo"><em>Deeco.</em></h3>
+
+        <ul>
+          
+          <div class="menu-list">
+            <li><a href="/">Home</a></li>
+          <li><a href="/all-products/">All products</a></li>
+          <li><a href="/coins-watchlist/">Today's deals</a></li>
+          <li><a href="/trending-coins-watchlist/">Electronics</a></li>
+          <li><a href="/blog/">Accessories</a></li>
+          <li><a href="/policy/">Deeco fashion</a></li>
+          <li><a href="/about/">Home and kitchen</a></li>
           </div>
-  
-          <div>
-            <svg fill="#000000" width="25px" height="25px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 31.2110 14.9453 C 31.4922 14.9453 31.6563 14.7578 31.7031 14.5000 C 32.4297 10.6094 32.4063 10.5156 36.4610 9.7187 C 36.7422 9.6719 36.9063 9.5312 36.9063 9.2500 C 36.9063 8.9453 36.7422 8.8047 36.4610 8.7578 C 32.4063 7.9375 32.4297 7.8672 31.7031 3.9765 C 31.6563 3.7187 31.4922 3.5312 31.2110 3.5312 C 30.9297 3.5312 30.7891 3.7187 30.7422 3.9765 C 29.9922 7.8672 30.0391 7.9375 25.9610 8.7578 C 25.7031 8.8047 25.5157 8.9453 25.5157 9.2500 C 25.5157 9.5312 25.7031 9.6719 25.9610 9.7187 C 30.0626 10.5156 29.9922 10.6094 30.7422 14.5000 C 30.7891 14.7578 30.9297 14.9453 31.2110 14.9453 Z M 42.4375 30.7891 C 42.8594 30.7891 43.1641 30.4844 43.2110 30.0391 C 43.9844 23.7578 44.2891 23.5703 50.6406 22.5860 C 51.1561 22.4922 51.4609 22.2578 51.4609 21.7891 C 51.4609 21.3438 51.1561 21.0625 50.7342 20.9922 C 44.3360 19.7734 43.9844 19.8203 43.2110 13.5391 C 43.1641 13.0938 42.8594 12.7891 42.4375 12.7891 C 41.9922 12.7891 41.6875 13.0938 41.6407 13.5156 C 40.8204 19.8672 40.6094 20.0781 34.1172 20.9922 C 33.6953 21.0391 33.3907 21.3438 33.3907 21.7891 C 33.3907 22.2344 33.6953 22.4922 34.1172 22.5860 C 40.6094 23.7812 40.8438 23.8047 41.6407 30.0860 C 41.6875 30.4844 41.9922 30.7891 42.4375 30.7891 Z M 24.7891 52.4688 C 33.2735 52.4688 40.0469 48.1797 43.2813 40.9609 C 43.6797 40.0938 43.6094 39.3438 43.1875 38.9453 C 42.8126 38.5938 42.1563 38.5469 41.4297 38.8047 C 39.5313 39.5547 37.3047 39.9297 34.7500 39.9297 C 24.1094 39.9297 17.3126 33.2734 17.3126 22.8906 C 17.3126 19.9375 17.8750 17.1016 18.6016 15.6485 C 19.0000 14.8281 19.0000 14.1250 18.6485 13.6797 C 18.2266 13.2109 17.4766 13.1406 16.5626 13.4922 C 9.3672 16.3281 4.5391 23.9687 4.5391 32.5469 C 4.5391 43.9609 12.9531 52.4688 24.7891 52.4688 Z"></path></g></svg>
-          </div>
-        </nav>
-      </header>
+        </ul>
+      </div>
+
+      <div>
+        <svg fill="#000000" width="25px" height="25px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 31.2110 14.9453 C 31.4922 14.9453 31.6563 14.7578 31.7031 14.5000 C 32.4297 10.6094 32.4063 10.5156 36.4610 9.7187 C 36.7422 9.6719 36.9063 9.5312 36.9063 9.2500 C 36.9063 8.9453 36.7422 8.8047 36.4610 8.7578 C 32.4063 7.9375 32.4297 7.8672 31.7031 3.9765 C 31.6563 3.7187 31.4922 3.5312 31.2110 3.5312 C 30.9297 3.5312 30.7891 3.7187 30.7422 3.9765 C 29.9922 7.8672 30.0391 7.9375 25.9610 8.7578 C 25.7031 8.8047 25.5157 8.9453 25.5157 9.2500 C 25.5157 9.5312 25.7031 9.6719 25.9610 9.7187 C 30.0626 10.5156 29.9922 10.6094 30.7422 14.5000 C 30.7891 14.7578 30.9297 14.9453 31.2110 14.9453 Z M 42.4375 30.7891 C 42.8594 30.7891 43.1641 30.4844 43.2110 30.0391 C 43.9844 23.7578 44.2891 23.5703 50.6406 22.5860 C 51.1561 22.4922 51.4609 22.2578 51.4609 21.7891 C 51.4609 21.3438 51.1561 21.0625 50.7342 20.9922 C 44.3360 19.7734 43.9844 19.8203 43.2110 13.5391 C 43.1641 13.0938 42.8594 12.7891 42.4375 12.7891 C 41.9922 12.7891 41.6875 13.0938 41.6407 13.5156 C 40.8204 19.8672 40.6094 20.0781 34.1172 20.9922 C 33.6953 21.0391 33.3907 21.3438 33.3907 21.7891 C 33.3907 22.2344 33.6953 22.4922 34.1172 22.5860 C 40.6094 23.7812 40.8438 23.8047 41.6407 30.0860 C 41.6875 30.4844 41.9922 30.7891 42.4375 30.7891 Z M 24.7891 52.4688 C 33.2735 52.4688 40.0469 48.1797 43.2813 40.9609 C 43.6797 40.0938 43.6094 39.3438 43.1875 38.9453 C 42.8126 38.5938 42.1563 38.5469 41.4297 38.8047 C 39.5313 39.5547 37.3047 39.9297 34.7500 39.9297 C 24.1094 39.9297 17.3126 33.2734 17.3126 22.8906 C 17.3126 19.9375 17.8750 17.1016 18.6016 15.6485 C 19.0000 14.8281 19.0000 14.1250 18.6485 13.6797 C 18.2266 13.2109 17.4766 13.1406 16.5626 13.4922 C 9.3672 16.3281 4.5391 23.9687 4.5391 32.5469 C 4.5391 43.9609 12.9531 52.4688 24.7891 52.4688 Z"></path></g></svg>
+      </div>
+
+      <div class="hamburger-icon">
+        <a href="/index.html">
+          <!-- <svg width="25px" height="25px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M914.368 673.664h-519.68c-25.152 0-45.568-22.016-45.568-48.896 0-26.88 20.416-48.896 45.568-48.896h519.68c25.216 0 45.632 22.016 45.632 48.896 0 26.88-20.48 48.896-45.632 48.896z m0-228.096h-519.68c-25.152 0-45.568-21.952-45.568-48.896 0-26.88 20.416-48.896 45.568-48.896h519.68c25.216 0 45.632 22.016 45.632 48.896 0 26.88-20.48 48.896-45.632 48.896z m-3.264-219.904H115.328c-26.88 0-50.56-20.352-51.328-47.168A48.896 48.896 0 0 1 112.896 128h795.776c26.88 0 50.56 20.416 51.328 47.168a48.896 48.896 0 0 1-48.896 50.56z m-619.776 447.232V348.672L64 510.784l227.328 162.112c0 0.768 0 0.768 0 0z m-178.432 122.944h795.776c26.88 0 50.56 20.48 51.328 47.232a48.896 48.896 0 0 1-48.896 50.496H115.328c-26.88 0-50.56-20.416-51.328-47.232a48.896 48.896 0 0 1 48.896-50.496z" fill="#000000"></path></g></svg> -->
+          <svg width="25px" height="25px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M109.632 673.664h519.68c25.152 0 45.568-22.016 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m0-228.096h519.68c25.152 0 45.568-21.952 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m3.264-219.904h795.776c26.88 0 50.56-20.352 51.328-47.168A48.896 48.896 0 0 0 911.104 128H115.328c-26.88 0-50.56 20.416-51.328 47.168a48.896 48.896 0 0 0 48.896 50.56z m619.776 447.232V348.672L960 510.784l-227.328 162.112c0 0.768 0 0.768 0 0z m178.432 122.944H115.328c-26.88 0-50.56 20.48-51.328 47.232a48.896 48.896 0 0 0 48.896 50.496h795.776c26.88 0 50.56-20.416 51.328-47.232a48.896 48.896 0 0 0-48.896-50.496z" fill="#000000"></path></g></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
     <section class="withdraw-wrapper">
         <div class="withdraw_wallet-card">
             <h1>Total Wallet Balance</h1>
