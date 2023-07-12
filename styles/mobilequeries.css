@@ -42,6 +42,20 @@ header nav .hamburger-icon{
 .top-nav-cart .create-store{
   display: none;
 }
+/* ================hero section==================== */
+.hero-wrapper .hero_wrapper-contents h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.hero-wrapper .hero_wrapper-contents p{
+  padding: 0 10px;
+}
+
+.hero_wrapper-contents .start-shopping-link{
+  margin-top: 15px;
+  font-size: 22px;
+  width: 80%;
+  padding: 0.8rem 2rem;
 
 /* =============================Start of Mobile Menu Card=================================== */
 

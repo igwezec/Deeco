@@ -108,7 +108,7 @@ nav .hamburger-icon{
 }
 
 /* =====================Hero Section ========================= */
-.hero-container{
+.hero-section{
   background: url(../assets/images/hero.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
@@ -117,8 +117,46 @@ nav .hamburger-icon{
   justify-content: center;
   align-items: center;
 }
+.hero-wrapper{
+  background: rgba(255,255,255,0.25);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(4.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  width: 80%;
+}
+.hero_wrapper-contents{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero_wrapper-contents h1{
+  font-size: 50px;
+  font-weight: 30px;
+  color: rgb(61, 60, 60);
+}
 
-.hero_content-box{
+.start-shopping-link{
+  margin-top: 15px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: rgb(112, 191, 86);
+  border-radius: 5px;
+  width: 40%;
+  display: block;
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+
+/* .hero_content-box{ 
   background: rgba(255,255,255,0.25);
   box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
   border-radius: 10px;
@@ -131,7 +169,7 @@ nav .hamburger-icon{
   text-align: center;
   height: 70%;
   width: 70%;
-}
+}*/
 
 .hero_content-box .hero-content{
   width: 50%;
