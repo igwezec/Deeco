@@ -25,8 +25,16 @@ header{
 /*================================Header section=======================*/
 .top-nav-container{
   background-color: rgb(43, 135, 215);
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; */
   /* padding: 10px 0; */
 }
+
+
+
 .top-nav{
   display: flex;
   justify-content: space-between;
@@ -211,16 +219,36 @@ nav .hamburger-icon{
 .product-contents .product-card{
   width: 31%;
   margin-bottom: 1.5rem;
-  padding: 2rem 1.5rem;
+  padding: 1rem 1.5rem;
   box-shadow: 0 0 15px 2px rgb(0 0 0 / 5%);
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.product-card .product-card-image{
+.product-contents .product-card .product-card-image{
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1rem 0;
+  width: 100%;
+  height: 25vh;
 }
+
+.product-card .product-card-image img{
+  width: 35%;
+  height: 100%;
+}
+
+
+
+
+
 .product-card .product-card-title{
   text-align: end;
+  font-weight: bold;
 
 }
 .product-card .product-card-para{
